@@ -2,6 +2,7 @@ package com.wainhouse.tta.service;
 
 import com.wainhouse.tta.domain.Task;
 
+import com.wainhouse.tta.repos.TaskRepo;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
@@ -49,7 +50,7 @@ public class TaskServiceDB implements TaskService {
     public Task replaceTask(Integer id, Task newTask) {
         Task existing = this.getTask(id);
 
-        existing.setTask(newTask.getTask(););
+        existing.setTask(newTask.getTask());
         existing.setDateAdded(newTask.getDateAdded());
         existing.setDateCompleted(newTask.getDateCompleted());
         existing.setType(newTask.getType());
