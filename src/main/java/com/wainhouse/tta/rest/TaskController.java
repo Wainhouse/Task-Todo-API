@@ -20,10 +20,10 @@ public class TaskController {
         this.service = service;
     }
 
-//    @GetMapping("/hello") // listening for hello world (Testing)
-//    public String hello() {
-//        return "Hello, World!"; //response
-//    }
+    @GetMapping("/hello") // listening for hello world (Testing)
+    public String hello() {
+        return "Hello, World!"; //response
+    }
 
 
     //CREATE
