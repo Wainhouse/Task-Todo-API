@@ -3,6 +3,9 @@ package com.wainhouse.tta;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wainhouse.tta.domain.Task;
+import com.wainhouse.tta.repos.TaskController;
+import com.wainhouse.tta.service.TaskService;
+import com.wainhouse.tta.service.TaskServiceDB;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -23,6 +26,11 @@ public class TodoTaskApiApplication {
 		Task backtoTask = mapper.readValue(demoTaskAsJSON, Task.class);
 
 		System.out.println(backtoTask);
+
+		// SUPER DEMO
+		TaskService service = new TaskServiceDB();
+
+		TaskController controller = new TaskController(service);
 	}
 
 	}
