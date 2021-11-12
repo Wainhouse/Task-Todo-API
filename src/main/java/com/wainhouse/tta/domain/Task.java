@@ -1,14 +1,22 @@
 package com.wainhouse.tta.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Task {
 
-    private Long id;
+    @Id // This is a PK
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto
+    private Integer id;
     private String task;
     private String dateAdded;
     private String dateCompleted;
     private String type;
 
-    public Task(Long id, String task, String dateAdded, String dateCompleted, String type) {
+    public Task(Integer id, String task, String dateAdded, String dateCompleted, String type) {
         this.id = id;
         this.task = task;
         this.dateAdded = dateAdded;
@@ -16,11 +24,15 @@ public class Task {
         this.type = type;
     }
 
-    public Long getId() {
+    public Task() {
+        super();
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -55,7 +67,7 @@ public class Task {
     public void setType(String type) {
         this.type = type;
     }
-
+    // Not needed
     @Override
     public String toString() {
         return "Task [Task:" + task + ", Date Added:" + dateAdded + ", Date Completed:" + dateCompleted + ", Type:" + type + "]";

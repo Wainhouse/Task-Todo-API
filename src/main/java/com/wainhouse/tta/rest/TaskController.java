@@ -1,18 +1,20 @@
-package com.wainhouse.tta.repos;
+package com.wainhouse.tta.rest;
 
 import com.wainhouse.tta.domain.Task;
 import com.wainhouse.tta.service.TaskService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
+@RequestMapping("/task")
 public class TaskController {
 
     private TaskService service;
 
+    @Autowired
     public TaskController(TaskService service) {
         super();
         this.service = service;
