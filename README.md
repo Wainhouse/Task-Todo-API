@@ -33,7 +33,7 @@ Once you have the .jar file downloaded make sure to navigate with your command l
 
 In the Command Line interface run
 
-Todo-Task-Api.jar
+Java -jar Todo-Task-Api.jar
 
 # Problems
 
