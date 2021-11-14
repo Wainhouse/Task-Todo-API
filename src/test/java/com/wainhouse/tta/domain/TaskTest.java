@@ -1,16 +1,17 @@
-package com.wainhouse.tta.unitTest;
+package com.wainhouse.tta.domain;
 
 import com.wainhouse.tta.domain.Task;
-import org.junit.Test;
+import org.testng.annotations.Test;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TaskTest {
 
     Task task1 = new Task(1, "Watch Tv show", "30/11/2021", "02/12/2021", "Urgent");
-    Task task2 = new Task ("Eat Cereal", "31/11/2021", "31/11/2021", "Urgent");
-    Task task3 = new Task(1, "walk dog", "30/11/2021", "30/11/2021", "Urgent");
 
+
+    // Testing Getters and Setters
     @Test
     public void testGetId() {
         assertEquals(1, task1.getId());
