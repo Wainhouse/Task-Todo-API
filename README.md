@@ -23,6 +23,8 @@ Once you have the .jar file downloaded make sure to navigate with your command l
 
 In the Command Line interface run
 
+java -jar 1.0-fat.jar
+
 # Problems
 
 I have included a Mysql application properties file in, but the test H2 file is default. This is because MySql will not run properly on my setup. IntelliJ and MySQL will not talk to each other on my system.
