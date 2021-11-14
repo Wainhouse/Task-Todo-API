@@ -17,3 +17,7 @@ Git
 # Installing
 
 After you have installed all the necessary software, download the latest release from the releases tab.
+
+Once you have the .jar file downloaded make sure to navigate with your command line interface to the folder it is stored in.
+
+In the Command Line interface run
