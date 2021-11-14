@@ -8,6 +8,8 @@ import javax.persistence.Id;
 @Entity
 public class Task {
 
+
+    //Attributes
     @Id // This is a PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto
     private Integer id;
@@ -16,7 +18,7 @@ public class Task {
     private String dateCompleted;
     private String type;
 
-
+    //Constructors
     public Task(Integer id, String task, String dateAdded, String dateCompleted, String type) {
         super();
         this.id = id;
@@ -26,10 +28,22 @@ public class Task {
         this.type = type;
     }
 
+    public Task(String task, String dateAdded, String dateCompleted, String type) {
+        super();
+        this.task = task;
+        this.dateAdded = dateAdded;
+        this.dateCompleted = dateCompleted;
+        this.type = type;
+    }
+
+
+
     public Task() {
         super();
     }
 
+
+    //Getter and Setters
     public Integer getId() {
         return id;
     }
