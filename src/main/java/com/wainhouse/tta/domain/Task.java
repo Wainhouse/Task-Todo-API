@@ -26,7 +26,15 @@ public class Task {
         this.type = type;
     }
 
-    public Task() {
+    public Task(String task, String dateAdded, String dateCompleted, String type) {
+        super();
+        this.task = task;
+        this.dateAdded = dateAdded;
+        this.dateCompleted = dateCompleted;
+        this.type = type;
+    }
+
+    public Task(int i, String s) {
         super();
     }
 
