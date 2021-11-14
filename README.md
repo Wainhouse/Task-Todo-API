@@ -37,7 +37,7 @@ java -jar 1.0-fat.jar
 
 # Problems
 
-I have included a Mysql application properties file in, but the test H2 file is default. This is because MySql will not run properly on my setup. IntelliJ and MySQL will not talk to each other on my system.
+I have included a Mysql application properties file, but the test H2 file is default. This is because MySql will not run properly on my setup. IntelliJ and MySQL will not talk to each other on my system.
 
 This problem with MySQL took up up a significant amount of time. As you can see from my Initial concept documentation in the Documentation folder; originally I wanted to create a front end which users could interact with. In the future I would like to add a frontend.
 
