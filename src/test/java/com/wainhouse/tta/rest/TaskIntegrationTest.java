@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.ResultMatcher;
@@ -18,12 +20,17 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootTest // boots the entire context
 @AutoConfigureMockMvc // creates the MockMVC object for sending our test requests
+@Sql(scripts = { "classpath:task-schema.sql",
+        "classpath:task-data.sql" }, executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
+// runs schema and data file before each test
+// if you see error like 'x is not a column' check you're using '' for strings
+@ActiveProfiles("test") // sets the profile to 'test'
 public class TaskIntegrationTest {
 
     @Autowired
     private MockMvc mvc;
 
-    // Too Long, Didn't Read:
+    // TL;DR:
     @Autowired
     private ObjectMapper mapper; // the EXACT SAME mapper that spring uses to convert objects to and from JSON
 
