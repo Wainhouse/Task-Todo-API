@@ -5,14 +5,14 @@ The purposee of this project is to create a simple H2 API which documents a user
 OOP-based java api, with utilisation of supporting  technologies, that encapsulates all fundamental and practical modules covered during the QA Digital Skills Bootcamp.
 
 # Scope 
-●	Code fully integrated into a Version Control System using the feature-branch model: main/dev/multiple features.
-●	A project management board with full expansion on user stories, acceptance criteria and tasks needed to complete the project.
-●	A risk assessment which outlines the issues and risks faced during the project timeframe.
-●	A relational database, locally or within the Cloud, which is used to persist data for the project. 
-●	A functional application ‘back-end’, written in a suitable framework of the language covered in training (Java/Spring Boot), which meets the requirements set on your Scrum Kanban board.
-●	A build (.jar) of your application, including any dependencies it might need, produced using an integrated build tool (Maven).
-●	A series of API calls designed with postman, used for CRUD functionality. (Create, Read, Update, Delete)
-●	Fully designed test suites for the application you are creating, including both unit and integration tests.
+<p>●	Code fully integrated into a Version Control System using the feature-branch model: main/dev/multiple features.</p>
+<p>●	A project management board with full expansion on user stories, acceptance criteria and tasks needed to complete the project.</p>
+<p>●	A risk assessment which outlines the issues and risks faced during the project timeframe.</p>
+<p>●	A relational database, locally or within the Cloud, which is used to persist data for the project. </p>
+<p>●	A functional application ‘back-end’, written in a suitable framework of the language covered in training (Java/Spring Boot), which meets the requirements set on your Scrum Kanban board.</p>
+<p>●	A build (.jar) of your application, including any dependencies it might need, produced using an integrated build tool (Maven).</p>
+<p>●	A series of API calls designed with postman, used for CRUD functionality. (Create, Read, Update, Delete)</p>
+<p>●	Fully designed test suites for the application you are creating, including both unit and integration tests.</p>
 
 # Getting it Running
 
