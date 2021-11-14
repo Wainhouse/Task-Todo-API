@@ -16,7 +16,9 @@ public class Task {
     private String dateCompleted;
     private String type;
 
+
     public Task(Integer id, String task, String dateAdded, String dateCompleted, String type) {
+        super();
         this.id = id;
         this.task = task;
         this.dateAdded = dateAdded;
@@ -66,11 +68,6 @@ public class Task {
 
     public void setType(String type) {
         this.type = type;
-    }
-    // Not needed
-    @Override
-    public String toString() {
-        return "Task [Task:" + task + ", Date Added:" + dateAdded + ", Date Completed:" + dateCompleted + ", Type:" + type + "]";
     }
 
 }
