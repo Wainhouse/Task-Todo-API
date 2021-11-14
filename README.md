@@ -1,8 +1,8 @@
 # Task-Todo-API
-The purposee of this project is to create a simple H2 API which documents a users daily/weekly tasks.
+The purpose of this project is to create a simple H2 API which documents a users daily/weekly tasks.
 
 # Introduction
-OOP-based java api, with utilisation of supporting  technologies, that encapsulates all fundamental and practical modules covered during the QA Digital Skills Bootcamp.
+OOP-based java api, with utilisation of supporting technologies, that encapsulates all fundamental and practical modules covered during the QA Digital Skills Bootcamp.
 
 # Scope 
 <p>●	Code fully integrated into a Version Control System using the feature-branch model: main/dev/multiple features.</p>
@@ -33,7 +33,7 @@ Once you have the .jar file downloaded make sure to navigate with your command l
 
 In the Command Line interface run
 
-Todo-Task-Api.jar
+java -jar Todo-Task-Api.jar
 
 # Problems
 
