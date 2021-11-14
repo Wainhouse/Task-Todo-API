@@ -10,9 +10,9 @@ These instruction will help you get a running version of this API on your machin
 
 # What You'll Need
 
-H2
-Java
-Maven
+H2,
+Java (version 11.0 or higher),
+Apache Maven,
 Git
 
 # Installing
@@ -27,5 +27,5 @@ In the Command Line interface run
 
 I have included a Mysql application properties file in, but the test H2 file is default. This is because MySql will not run properly on my setup. IntelliJ and MySQL will not talk to each other on my system.
 
-This problem with MySQL ate up a significant amount of time. As you can see from my Initial concept documentation in the Documentation folder; originally I wanted to creat a front end which users could interact with. 
+This problem with MySQL took up up a significant amount of time. As you can see from my Initial concept documentation in the Documentation folder; originally I wanted to creat a front end which users could interact with. 
 
