@@ -1,5 +1,5 @@
 INSERT INTO
 	`task`
-(`task`, `dateAdded`, `dateCompleted`, `type`)
+(`date_added`, `date_completed`, `task`, `type`)
 	VALUES
-('Do Laundry', '30/11/2021', '31/11/2021', 'Urgent');
+('30/11/2021', '31/11/2021', 'Do Laundry','Urgent');

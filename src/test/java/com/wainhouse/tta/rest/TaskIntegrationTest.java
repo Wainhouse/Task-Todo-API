@@ -61,11 +61,7 @@ public class TaskIntegrationTest {
 
         ResultMatcher checkStatus = status().isOk();
 
-        Task task = new Task(1,
-                "Do Homework",
-                "01/11/2021",
-                "02/11/2021",
-                "Urgent");
+        Task task = new Task("Do Laundry", "30/11/2021", "31/11/2021", "Urgent");
 
         List<Task> tasks = List.of(task);
         String responseBody = this.mapper.writeValueAsString(tasks);
