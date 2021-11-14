@@ -1,4 +1,5 @@
 # Task-Todo-API
+The purposee of this project is to create a simple H2 API which documents a users daily/weekly tasks.
 
 # Introduction
 OOP-based java api, with utilisation of supporting  technologies, that encapsulates all fundamental and practical modules covered during the QA Digital Skills Bootcamp.
